@@ -1,0 +1,52 @@
+.loaders {
+  background: black;
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaders img {
+  height: 3.5rem;
+}
+.lottie-img {
+  height: 0.8rem;
+  width: 11rem;
+}
+
+/* .loader-text img {
+  height: 3rem;
+}
+
+.loader-text {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: float 3s ease-in-out infinite;
+  order: 2;
+  margin-bottom: 20px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} */
