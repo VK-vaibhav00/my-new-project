@@ -1,5 +1,5 @@
 .Navbar {
-    color: #57a3ff;
+    color: #000000;
     width: 100vw;
     padding: 10px 30px;
     position: fixed;
@@ -41,7 +41,7 @@
   }
   
   nav ul li .active {
-    color: #000000;
+    color: rgb(49, 14, 209);
     font-weight: bolder;
   }
 
@@ -100,12 +100,12 @@
   */
   
   .dark-nav {
-    background-color: #8ec1f4;
+    background-color: skyblue;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 0.3s;
     box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.1);
-    color: white;
+    color:#000000;
   }
   .menu-icon {
     display: none;

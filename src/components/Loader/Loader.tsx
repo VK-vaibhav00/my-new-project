@@ -1,34 +1,37 @@
-import React, { useEffect, useRef } from "react";
-import "./Loader.css";
-import AOS from "aos";
-import Lottie from "lottie-react";
-import Loaderanimation from "../../assets/Animation - 1722518365398.json";
+import React, { useEffect, useRef } from 'react';
+import lottie from 'lottie-web';
+import './Loader.css';
+import Loaderanimation from '../../assets/Animation - 1735551528650.json';
 
 const Loader = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-  const animationRef = useRef(null);
+  const animationRef = useRef(null); // Create a reference for the DOM container
 
   useEffect(() => {
     if (animationRef.current) {
-      const animation = animationRef.current;
-      animation.setSpeed(2); // Set the speed of the animation
+      const animationInstance = lottie.loadAnimation({
+        container: animationRef.current, // DOM element for animation
+        renderer: 'svg', // Renderer type
+        loop: true,
+        autoplay: true,
+        animationData: Loaderanimation, // JSON animation data
+      });
+
+      animationInstance.setSpeed(1); // Set the speed of the animation
+
+      return () => {
+        animationInstance.destroy(); // Cleanup the animation instance
+      };
     }
   }, []);
 
   return (
-    <div className="loaders">
-      <img src={infeonit} alt="" />
-      <Lottie
-        animationData={Loaderanimation}
-        lottieRef={animationRef}
-        className="lottie-img"
+    <div className='loaders'>
+      <div
+        ref={animationRef}
+        className='lottie-img'
       />
-     
-     
     </div>
-  );
+  ); // Attach ref to the container div
 };
 
 export default Loader;

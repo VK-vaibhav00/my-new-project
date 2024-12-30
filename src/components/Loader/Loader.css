@@ -1,5 +1,5 @@
 .loaders {
-  background: black;
+  background: rgb(255, 255, 255);
   text-align: center;
   min-height: 100vh;
   width: 100vw;
@@ -13,8 +13,9 @@
   height: 3.5rem;
 }
 .lottie-img {
-  height: 0.8rem;
-  width: 11rem;
+  width: 300px; /* or set it as needed */
+  height: 300px; /* Ensure proper dimensions for the animation */
+  margin: auto;
 }
 
 /* .loader-text img {
