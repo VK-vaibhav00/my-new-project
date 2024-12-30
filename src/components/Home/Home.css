@@ -8,13 +8,108 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('../../assets/16282276_rm222batch2-mind-03.jpg');
+    background-image: url('../../assets/rm222batch2-kul-27.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 1.5rem;
     
 }
-.home h1{
+.home-text{
+    line-height: 1.3;
+}
+.home-text h1{
     color: rgb(0, 0, 0);
     font-size: 3rem;    
 }
+.home-text h1 strong{
+    color: #57a3ff;
+    -webkit-text-stroke: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+}
+.home-text p{
+    font-size: 1.1rem;
+    color: #000000;
+}
+.home-img {
+    height: auto;
+    border-radius: 15px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .btn-explore {
+    margin-top: 1.2rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #57a3ff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(127, 153, 224, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-explore:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(77, 130, 222, 0.6);
+    color: black;
+  }
+
+
+
+
+
+  @media (max-width: 992px) {
+    .home-text {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .image-container {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .home-img {
+      max-width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-text p {
+      font-size: 1rem;
+    }
+  
+    .home-img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-text h1 {
+      font-size: 2rem;
+    }
+  
+    .home-text p {
+      font-size: 0.9rem;
+    }
+  
+    .btn-explore {
+      font-size: 0.9rem;
+    }
+  }

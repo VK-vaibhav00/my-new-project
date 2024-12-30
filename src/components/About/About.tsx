@@ -3,13 +3,13 @@ import './About.css';
 
 const About = () => {
   return (
-    <>
-      <div className='container'>
-        <div className='about'>
+    <section id='about'>
+      <div className='container-fluid'>
+        <div className='about container'>
           <h1>About</h1>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

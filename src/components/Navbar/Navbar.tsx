@@ -76,7 +76,7 @@ const Navbar = () => {
         data-aos='fade-down'
       >
         <Link
-          to='hero'
+          to='home'
           smooth={true}
           duration={500}
           onClick={() => handleItemClick('home')}
@@ -88,27 +88,25 @@ const Navbar = () => {
           />
         </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          {['hero', 'services', 'Products', 'work', 'contacts'].map(
-            (section, index) => (
-              <li key={index}>
-                <Link
-                  to={section}
-                  smooth={true}
-                  offset={-50}
-                  duration={500}
-                  className={activeItem === section ? 'active' : ''}
-                  onClick={() => handleItemClick(section)}
-                >
-                  {section
-                    .toUpperCase()
-                    .replace('HERO', 'HOME')
-                    .replace('PRODUCTS', 'PRODUCT')
-                    .replace('CONTACTS', 'CONTACT-US')
-                    .replace('WORK', 'PORTFOLIO')}
-                </Link>
-              </li>
-            )
-          )}
+          {['home', 'services', 'about', 'contact'].map((section, index) => (
+            <li key={index}>
+              <Link
+                to={section}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className={activeItem === section ? 'active' : ''}
+                onClick={() => handleItemClick(section)}
+              >
+                {section
+                  .toUpperCase()
+                  .replace('HOME', 'HOME')
+                  .replace('SERVICE', 'SERVICE')
+                  .replace('CONTACT', 'CONTACT-US')
+                  .replace('ABOUT', 'ABOUT-US')}
+              </Link>
+            </li>
+          ))}
         </ul>
         {/* <div className={`nav-contact ${mobileMenu ? '' : 'hide-mobile-menu'}`}>
           <div className='contact-icons'>

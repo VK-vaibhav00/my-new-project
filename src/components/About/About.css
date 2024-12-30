@@ -9,6 +9,11 @@
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
+    background-image: url('../../assets/16282276_rm222batch2-mind-03.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
 }
 .about h1{
     color: rgb(0, 0, 0);
