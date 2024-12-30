@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import Loader from './components/Loader/Loader';
-import Home from './components/Home';
+import React from 'react';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
+import Navbar from './components/Navbar/Navbar';
 
 const App = () => {
   return (
     <>
+      <Navbar />
       <Home />
+      <About />
+      <Services />
+      <Contact />
     </>
   );
 };
