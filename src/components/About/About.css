@@ -5,17 +5,75 @@
 }
 .about{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    gap: 4rem;
     height: 100vh;
-    background-color: #ffffff;
-    background-image: url('../../assets/16282276_rm222batch2-mind-03.jpg');
+    /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb, #ffffff); */
+    background-image: url('../../assets/rm209-ning-19.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 1.5rem;
+    overflow: hidden;
 }
-.about h1{
+.about-text{
+    line-height: 1.2;
+    /* margin-top: -8rem; */
+    padding-right: 2rem;
+}
+.about-text h1{
+    color: slateblue;
+    font-size: 4em;   
+    font-weight: bolder;
+}
+.about-text strong{
     color: rgb(0, 0, 0);
-    font-size: 3rem;    
+    font-size: 1.8rem;
+    font-weight: bolder;
 }
+.about-text p{
+    font-size: 1.4rem;
+    color: #000000;
+    margin-top: 1rem;
+}
+.about-img{
+    padding-top: 4rem;
+}
+.about-img img{
+    height: 25rem;
+    border-radius: 15px;
+    /* filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5)); */
+    animation: float 3s ease-in-out infinite;
+   
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .btn-explore {
+    margin-top: 1.2rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #57a3ff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(127, 153, 224, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-explore:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(77, 130, 222, 0.6);
+    color: black;
+  }
+

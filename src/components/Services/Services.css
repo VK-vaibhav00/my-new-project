@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.services{
+.service{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,9 +15,7 @@
     background-repeat: no-repeat;
     padding: 1.5rem;    
 }
-/* .style{
-    backgroundImage:url(${bgcol});
-    backgroundSize: "cover";
-    backgroundPosition: "center";
-    height: "400";
-  } */
+.services h1{
+    color: rgb(0, 0, 0);
+    font-size: 3rem;    
+}

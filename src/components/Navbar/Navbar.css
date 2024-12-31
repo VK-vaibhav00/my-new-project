@@ -8,7 +8,7 @@
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-startS;
     gap: 22rem;
     z-index: 10;
     max-height: 10vh;
@@ -16,18 +16,22 @@
   }
   
   .logo {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   nav ul li {
     display: inline-block;
     text-decoration: none;
-    margin: 5px 25px;
+    padding: 5px 25px;
     font-size: 18px;
     font-weight: bolder;
     overflow: hidden;
     text-align: center;
+    /* border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 10px;
+    background: linear-gradient(45deg,black,red); */
 
   }
   
@@ -35,13 +39,10 @@
   nav ul li.active {
     color: #16b9ff;
     font-weight: bolder;
-    /* border: 1px solid black;
-    border-radius: 25px; */
-    /* padding: 10px; */
   }
   
   nav ul li .active {
-    color: rgb(49, 14, 209);
+    color: #16b9ff;
     font-weight: bolder;
   }
 
@@ -49,63 +50,16 @@
    width: 50rem;
   }
   
-  /* .nav-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    padding-right: 10px;
-    gap: 7px;
-  }
   
-  .contact-icons {
-    display: flex;
-    gap: 5px;
-    margin-left: 5px;
-  }
-  
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    padding: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-icon.active {
-    color: #d4a117; 
-  }
-  
-  .contact-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .contact-details {
-    margin-left: 20px;
-    margin-right: 10px;
-  }
-  
-  .btn {
-    background-color: white;
-    color: black;
-    padding: 10px 25px;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-  }
-  */
   
   .dark-nav {
-    background-color: skyblue;
-    padding-top: 10px;
+    background-color: #e0f7fa;
+color: #000000;
+        padding-top: 10px;
     padding-bottom: 10px;
     transition: 0.3s;
     box-shadow: 0px 20px 90px rgba(0, 0, 0, 0.1);
-    color:#000000;
+    /* color:#000000; */
   }
   .menu-icon {
     display: none;
@@ -136,20 +90,9 @@
     nav ul li {
       display: block;
       margin: 16px 25px;
-      font-size: 14px; /* Increase font size for mobile */
+      font-size: 14px; 
     }
-    /* .nav-contact {
-      position: fixed;
-      top: 256px;
-      right: 0px;
-      background: black;
-      z-index: 1;
-      width: 140px;
-      height: auto;
-      transition: 0.5s;
-      padding: -16px 0;
-      flex-direction: column;
-    } */
+    
     .menu-icon {
       display: block;
       width: 30px;
@@ -160,9 +103,6 @@
     .hide-mobile-menu {
       right: -225px;
     }
-    /* .nav-contact {
-      border: none;
-    } */
   }
   @media (max-width: 860px) {
     .logo {

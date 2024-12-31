@@ -26,15 +26,7 @@ const Services = () => {
     <>
       <div className='container'>
         <div className='services'>
-        <div>
-        <Slider {...setting}>
-            {images.map((image, index) => (
-              <div key={index} style={{ textAlign: "center" }}>
-                <img src={image} alt={`Slide ${index + 1}`} style={{ maxWidth: "100%", height: "auto" }} />
-              </div>
-            ))}
-          </Slider>
-    </div>
+          <h1>Services</h1>
         </div>
       </div>
     </>
