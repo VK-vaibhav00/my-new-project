@@ -10,11 +10,11 @@ import img3 from '../../assets/Heavy Duty Boxes.png';
 import img4 from '../../assets/paper-pallets-tray.png';
 import img5 from '../../assets/wooden-pallet-.png';
 import img6 from '../../assets/colorful box (2).jpg';
-import Bgcol from '../../assets/6080984.jpg';
+import Bgcol from '../../assets/rm222-mind-16.jpg';
 
 const Services = () => {
-  const images=[ img1,img2,img3,img4,img5,img6];
-  const setting={
+  const images = [img1, img2, img3, img4, img5, img6];
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -24,9 +24,15 @@ const Services = () => {
 
   return (
     <>
-      <div className='container'>
-        <div className='services'>
-          <h1>Services</h1>
+      <div className="container" style={{ backgroundImage: `url(${Bgcol})`, backgroundSize: "cover", backgroundPosition: "center", padding: "20px" }}>
+        <div className="services">
+          <Slider {...settings}>
+            {images.map((image, index) => (
+              <div key={index} style={{ textAlign: "center" }}>
+                <img src={image} alt={`Slide ${index + 1}`} style={{ maxWidth: "100%", height: "auto" }} />
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </>
