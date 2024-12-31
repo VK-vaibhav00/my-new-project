@@ -9,13 +9,15 @@
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
-    background-image: url('../../assets/rm209-ning-19.jpg');
+    background-image: url('../../assets/6080984.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 1.5rem;    
 }
-.services h1{
-    color: rgb(0, 0, 0);
-    font-size: 3rem;    
-}
+/* .style{
+    backgroundImage:url(${bgcol});
+    backgroundSize: "cover";
+    backgroundPosition: "center";
+    height: "400";
+  } */
