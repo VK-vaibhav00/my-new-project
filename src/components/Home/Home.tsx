@@ -11,21 +11,19 @@ const Home = () => {
     <section id='home'>
       <div className='container-fluid'>
         <div className='home container'>
-          <div className='home-text'>
-            <h1 data-aos='fade-right'>
+          <div
+            className='home-text'
+            data-aos='fade-right'
+          >
+            <h1>
               Sunrise <strong>Packaging Solutions</strong> for a Sustainable
               Future
             </h1>
-            <p data-aos='fade-right'>
+            <p>
               Reliable, eco-friendly solutions for all your cardboard needs.
               Simplify your operations while promoting sustainability.
             </p>
-            <button
-              className='btn-explore'
-              data-aos='fade-right'
-            >
-              Explore Products
-            </button>
+            <button className='btn-explore'>Explore Products</button>
           </div>
           <div
             className='image-container'

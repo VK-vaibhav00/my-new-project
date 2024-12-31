@@ -88,7 +88,7 @@ const Navbar = () => {
           />
         </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          {['home', 'services', 'about', 'contact'].map((section, index) => (
+          {['home', 'service', 'about', 'contact'].map((section, index) => (
             <li key={index}>
               <Link
                 to={section}
@@ -102,43 +102,12 @@ const Navbar = () => {
                   .toUpperCase()
                   .replace('HOME', 'HOME')
                   .replace('SERVICE', 'SERVICE')
-                  .replace('CONTACT', 'CONTACT-US')
-                  .replace('ABOUT', 'ABOUT-US')}
+                  .replace('CONTACT', 'CONTACT')
+                  .replace('ABOUT', 'ABOUT')}
               </Link>
             </li>
           ))}
         </ul>
-        {/* <div className={`nav-contact ${mobileMenu ? '' : 'hide-mobile-menu'}`}>
-          <div className='contact-icons'>
-            <img
-              src={call}
-              alt='Phone'
-              className={`contact-icon ${
-                activeContact === 'phone' ? 'active' : ''
-              }`}
-              onClick={() => setActiveContact('phone')}
-            />
-            <img
-              src={email}
-              alt='Email'
-              className={`contact-icon ${
-                activeContact === 'email' ? 'active' : ''
-              }`}
-              onClick={() => setActiveContact('email')}
-            />
-          </div>
-          <div className='contact-info'>
-            {activeContact === 'email' ? (
-              <div className='contact-details'>
-                <a href='mailto:info@infeonit.in'>info@infeonit.in</a>
-              </div>
-            ) : (
-              <div className='contact-details'>
-                <a href='tel:+919923199792'>+91 99231 99792</a>
-              </div>
-            )}
-          </div>
-        </div> */}
         <img
           src={menuicon}
           alt='Menu'

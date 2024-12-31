@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.services{
+.service{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     padding: 1.5rem;    
 }
-.services h1{
+.service h1{
     color: rgb(0, 0, 0);
     font-size: 3rem;    
 }
