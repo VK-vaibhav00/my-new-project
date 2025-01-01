@@ -4,13 +4,280 @@
     box-sizing: border-box;
 }
 .contact{
+    
+    height: 100vh;
+    background-image: url("../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+
+
+
+.headlineP7 {
+  font-size: 3rem;
+  text-align: left;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-family: "Sofia Pro SemiBold" !important;
+  font-weight: bold;
+  padding-left: 115px;
+}
+.page7content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  align-items: center;
+  width: 90%;
+  padding-right: 35px;
+}
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Adjust alignment as needed */
+  margin-top: 25px;
+  width: 55%;
+  /* height: 553px; */
+  color: #20252d;
+  background: white;
+  border-radius: 25px;
+}
+
+.form {
+  width: 100%;
+  float: left;
+  padding: 18px;
+  box-sizing: border-box;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-group {
+  width: 50%;
+  margin-bottom: 5px;
+  margin-right: 25px;
+}
+.form-group-message {
+  margin-bottom: 0px;
+  margin-right: 25px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  transition: color 0.3s ease;
+  pointer-events: none;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group-message textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 13px;
+  border: 1px solid #efefef;
+  border-radius: 23px;
+  margin: 9px 0px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group-message textarea {
+  resize: vertical;
+  max-height: 100px; /* Adjust as needed */
+}
+.form-group input:focus,
+.form-group-message textarea:focus {
+  border-color: #0d3efb; /* Border color when focused */
+  color: #0d3efb;
+}
+.form-group input:focus + label,
+.form-group-message textarea:focus + label {
+  color: #0d3efb;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group-message textarea:focus {
+  outline: none; /* Remove default blue outline on focus */
+}
+
+.form-group.error input,
+.form-group-message.error textarea {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-left: 9px;
+}
+.btn-explore {
+    margin-top: 1.2rem;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #57a3ff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(127, 153, 224, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .btn-explore:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(77, 130, 222, 0.6);
+    color: black;
+  }
+.card-container {
+    perspective: 1000px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    /* background-color: #000000; */
+    border-radius: 1rem;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .card-body {
+    width: 30rem;
+  /* padding: 20px; */
+  border-radius: 12px;
+  background: linear-gradient(to bottom right, #ffffff, #f3f4f6);
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .card-container:hover .card-body{
+    transform: rotateY(20deg) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-item.image-wrapper {
+    border-radius: 12px;
+
+  }
+  
+  .card-item.image-wrapper .thumbnail {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card-body:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  
+  
+  
+ 
+  
+ 
+  
+  
+  
+
+
+@media (max-width: 1300px) {
+  .clientLogos7 {
+    padding: 40px 0px 10px;
+  }
+}
+@media (max-width: 860px) {
+  .headlineP7 {
+    text-align: center;
+    font-size: 26px;
+    padding-left: 0px;
+  }
+  .form-container {
+    width: 100%;
+    order: 2;
+  }
+  .page7content {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .clientAd {
+    width: 100%;
+  }
+  .form {
+    padding: 10px 10px;
+  }
+  .contact-button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .contact-button img {
+    width: 20px;
+    margin-left: 8px;
+  }
+  .clientLogos7 {
+    padding: 40px 0px 10px;
+  }
+  .form-group input {
+    padding: 10px;
+  }
+  .form-group label {
+    display: none;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  .contacts {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .clientLogoSection {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
+    gap: 40px;
+  }
+  .clientLogos7 {
+    gap: 5px;
+    padding: 40px 0px 10px;
+  }
 }
-.contact h1{
-    color: rgb(0, 0, 0);
-    font-size: 3rem;    
+
+@media (max-width: 600px) {
+  .form-row {
+    align-items: start;
+    flex-direction: column;
+  }
+  .form-group {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .form-group-message {
+    margin-bottom: 5px;
+  }
 }
