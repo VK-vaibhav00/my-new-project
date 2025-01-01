@@ -1,9 +1,17 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.service{
+.service {    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +23,26 @@
     background-repeat: no-repeat;
     padding: 1.5rem;    
 }
-.services h1{
+.service h1{
     color: rgb(0, 0, 0);
     font-size: 3rem;    
+}
+.img-slider-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100;
+    display: block;
+}
+.img-slider-btn{
+    all:unset;
+    display:block;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    padding: 70%;
+    cursor: pointer;
+}
+.img-slider-btn{
+    stroke:white;
+    fill: black;
 }
