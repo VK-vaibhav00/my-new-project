@@ -10,7 +10,7 @@
     gap: 4rem;
     height: 100vh;
     /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb, #ffffff); */
-    background-image: url('../../assets/rm209-ning-19.jpg');
+    background-image: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,6 +26,7 @@
     color: slateblue;
     font-size: 4em;   
     font-weight: bolder;
+    font-family: "Sofia Pro SemiBold" !important;
 }
 .about-text strong{
     color: rgb(0, 0, 0);
