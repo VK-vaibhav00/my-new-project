@@ -1,0 +1,138 @@
+
+
+
+   .footerWrapper {
+    /* max-width: 100vw; */
+    position: relative;
+    overflow: hidden;
+    /* background-color: white; */
+    background-image: url('../../assets/hand-painted-watercolor-abstract-background_889452-25354.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+  }
+  
+  .footerContainer {
+ 
+    text-align: center;
+    max-width: 80%;
+    
+  }
+  
+  .input-text input {
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .input-text input:focus {
+    border-color: #0d3efb; 
+    color: #0d3efb;
+  }
+  
+  .input-text input[type="email"]:focus {
+    outline: none; 
+  }
+  .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65%;
+  }
+  .paragraph{
+    font-size: 0.9rem;
+  }
+  .footer-info {
+    width: 25%;
+  }
+  .brand-img {
+    width: 25%;
+  }
+  .b-image {
+    height: 25px;
+  }
+  .footer-ilogo {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: slateblue;
+  }
+  .footer-btn-explore {
+    padding: 12px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #57a3ff;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(127, 153, 224, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .footer-btn-explore:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(77, 130, 222, 0.6);
+    color: black;
+  }
+  .Getin {
+    margin-bottom: 15px;
+  }
+  .footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 1rem;
+  }
+
+  @media (max-width: 1300px) {
+    .footer-image {
+      display: none;
+    }
+  }
+  @media (max-width: 1000px) {
+    .footer-info {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 860px) {
+    .footer-image {
+      display: none;
+    }
+    .footer-copyright {
+      width: 100%;
+      gap: 13px;
+      flex-direction: column;
+      text-align: start;
+    }
+    .footer-info {
+      width: 100%;
+    }
+    .paragraph {
+      margin-bottom: 20px;
+    }
+    .brand-img {
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+    .footer-ilogo {
+      width: 35%;
+    }
+    .Getin {
+      margin: 20px 0px;
+    }
+    .input-text input {
+      padding: 10px 5px;
+    }
+    button img {
+      width: 18px;
+      margin-left: 5px;
+    }
+    .ft-button {
+      padding: 5px 5px;
+    }
+  }

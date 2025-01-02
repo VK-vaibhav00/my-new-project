@@ -5,6 +5,7 @@ import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Loader from './components/Loader/Loader';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
           <About />
           <Services />
           <Contact />
+          <Footer />
         </>
       )}
     </div>

@@ -71,7 +71,7 @@ const Navbar = () => {
   return (
     <div className='container-fluid'>
       <nav
-        className={`Navbar ${sticky ? 'dark-nav' : ''}`}
+        className={`Navbar container ${sticky ? 'dark-nav' : ''}`}
         ref={navRef}
         data-aos='fade-down'
       >

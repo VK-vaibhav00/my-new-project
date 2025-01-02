@@ -5,7 +5,7 @@
 }
 .contact{
     
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url("../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg");
     background-size: cover;
     background-position: center;
@@ -25,6 +25,7 @@
   font-family: "Sofia Pro SemiBold" !important;
   font-weight: bold;
   padding-left: 115px;
+  color: slateblue;
 }
 .page7content {
   display: flex;
@@ -234,9 +235,7 @@
     width: 20px;
     margin-left: 8px;
   }
-  .clientLogos7 {
-    padding: 40px 0px 10px;
-  }
+  
   .form-group input {
     padding: 10px;
   }
@@ -251,18 +250,9 @@
   }
 }
 
-@media (max-width: 470px) {
-  .clientLogoSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-  .clientLogos7 {
-    gap: 5px;
-    padding: 40px 0px 10px;
-  }
-}
+/* @media (max-width: 470px) {
+  
+} */
 
 @media (max-width: 600px) {
   .form-row {
