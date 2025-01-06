@@ -13,49 +13,6 @@ body {
   font-family: "Sofia Pro Regular", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  line-height: 1;
-  color: inherit;
-  cursor: pointer;
-}
-/* .container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
-} */
-.button {
-  color: white;
-  padding: 12px 13px;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  border: 1px solid #031d8e;
-  outline: 0;
-  background: transparent linear-gradient(90deg, #0d3efb 0%, #031d8e 100%) 0% 0%
-    no-repeat padding-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  /* transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
-    box-shadow 0.3s ease; */
-}
-
-/*.button:hover {
-  color: rgb(255, 255, 255);
-  background: transparent linear-gradient(90deg, #1e43d9 0%, #0924a0 100%) 50%
-    50% no-repeat padding-box;
-  border: 1px solid rgb(255, 255, 255);
-  transform: scale(1.05); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
-} */
-.button img {
-  width: 25px;
-  margin-left: 10px;
-}
-
 @media (max-width: 1310px) {
   /* .container {
     padding-left: 5%;

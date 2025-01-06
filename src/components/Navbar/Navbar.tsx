@@ -88,7 +88,7 @@ const Navbar = () => {
           />
         </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          {['home', 'service', 'about', 'contact'].map((section, index) => (
+          {['home', 'about', 'services', 'contact'].map((section, index) => (
             <li key={index}>
               <Link
                 to={section}
@@ -101,7 +101,7 @@ const Navbar = () => {
                 {section
                   .toUpperCase()
                   .replace('HOME', 'HOME')
-                  .replace('SERVICE', 'SERVICE')
+                  .replace('SERVICES', 'PRODUCT')
                   .replace('CONTACT', 'CONTACT')
                   .replace('ABOUT', 'ABOUT')}
               </Link>

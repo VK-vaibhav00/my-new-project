@@ -1,20 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.service{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../../assets/hand-painted-watercolor-abstract-background_889452-25354.jpg');
+
+.service {
+    min-height: 100vh;
+    background: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 1.5rem;    
+    align-content: center;
+    z-index: -2;
+    
 }
-.services h1{
-    color: rgb(0, 0, 0);
-    font-size: 3rem;    
+
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 40px;
+    padding: 20px;
+    margin: 2rem auto;
 }
+  .card{
+    margin: 0 auto;
+    padding: 1em;
+    width: 300px;
+    /* background: #dbe2ff; */
+    background: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .card-image img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Card Content */
+  .card-content {
+    padding: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #000000;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #000000;
+  }
+
+
+  @property --angle{
+    syntax: '<angle>';
+    initial-value: 360deg;
+    inherits: false;
+  }
+  
+  .card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #bddeff, #57a3ff);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 5s spin linear infinite;
+  }
+  .card::before{
+    filter: blur(1rem);
+    opacity: 0.5;
+  }
+  @keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{.card::before{
+        filter: blur(1.5rem);
+        opacity: 0.5;
+      }
+      --angle: 360deg;
+    }
+  }
+
+
+
+  @media (max-width: 1024px) {
+    .service-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-container {
+      grid-template-columns: 1fr;
+    }
+    .card {
+      max-width: 90%;
+    }
+  }

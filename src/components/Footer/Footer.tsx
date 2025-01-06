@@ -49,10 +49,10 @@ const Footer: React.FC = () => {
     setResult('Sending....');
 
     const accessKeys = [
-      //   '58226671-cf23-4742-9fc3-aec905c0cb6c',
-      //   '057c2cce-5505-4a66-a197-152890b03f9f',
-      //   '10b3997f-aa3d-4b16-8680-c80666c3f09b',
-      //   'dc3f74e7-9a1b-429f-8d28-2a651ac005c9',
+      '58226671-cf23-4742-9fc3-aec905c0cb6c',
+      '057c2cce-5505-4a66-a197-152890b03f9f',
+      '10b3997f-aa3d-4b16-8680-c80666c3f09b',
+      'dc3f74e7-9a1b-429f-8d28-2a651ac005c9',
     ];
 
     let successCount = 0;
@@ -144,7 +144,7 @@ const Footer: React.FC = () => {
               </div>
               <ul>
                 <Link
-                  to='hero'
+                  to='home'
                   smooth={true}
                   offset={-60}
                   duration={500}
@@ -169,7 +169,7 @@ const Footer: React.FC = () => {
                 >
                   <li>Services</li>
                 </Link>
-                <Link
+                {/* <Link
                   to='Products'
                   smooth={true}
                   offset={-60}
@@ -181,8 +181,8 @@ const Footer: React.FC = () => {
                   }}
                 >
                   <li>Products</li>
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   to='work'
                   smooth={true}
                   offset={-60}
@@ -194,7 +194,7 @@ const Footer: React.FC = () => {
                   }}
                 >
                   <li>Portfolio</li>
-                </Link>
+                </Link> */}
               </ul>
             </div>
 
@@ -211,7 +211,7 @@ const Footer: React.FC = () => {
               </div>
               <ul>
                 <Link
-                  to='services'
+                  to='about'
                   smooth={true}
                   offset={-60}
                   duration={500}
@@ -224,7 +224,7 @@ const Footer: React.FC = () => {
                   <li>About us</li>
                 </Link>
                 <Link
-                  to='contacts'
+                  to='contact'
                   smooth={true}
                   offset={-60}
                   duration={500}
