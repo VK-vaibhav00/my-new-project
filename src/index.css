@@ -13,16 +13,7 @@ body {
   font-family: "Sofia Pro Regular", sans-serif;
 }
 
-@media (max-width: 1310px) {
-  /* .container {
-    padding-left: 5%;
-    padding-right: 5%;
-  } */
-  .button {
-    padding: 7px 10px;
-    font-size: 12px;
-  }
-}
+
 .container {
   max-width: 1536px;
   margin-left: auto;

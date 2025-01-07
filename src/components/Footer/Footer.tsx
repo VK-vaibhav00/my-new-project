@@ -167,7 +167,7 @@ const Footer: React.FC = () => {
                     lineHeight: '29px',
                   }}
                 >
-                  <li>Services</li>
+                  <li>Product</li>
                 </Link>
                 {/* <Link
                   to='Products'

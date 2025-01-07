@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Services.css';
 import img1 from '../../assets/Carboardboxes/Partition.png';
 import img2 from '../../assets/Carboardboxes/corrugated.png';
 import img3 from '../../assets/Carboardboxes/Sheets2.png';
 import img4 from '../../assets/Carboardboxes/Heavy-duty.png';
-import img5 from '../../assets/Carboardboxes/Laminated.png';
+import img5 from '../../assets/Carboardboxes/illustration-cargo_498740-30994-removebg-preview.png';
 import img6 from '../../assets/Carboardboxes/Packeging.png';
+import Aos from 'aos';
 
 const cardsData = [
   {
@@ -53,17 +54,29 @@ const cardsData = [
 ];
 
 const Services = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section id='services'>
+    <section id='product'>
       <div className='container-fluid'>
         <div className=' service container'>
+          <p
+            className='service-heading'
+            data-aos='fade-down'
+          >
+            Our Products
+          </p>
           <div className='service-container'>
             {cardsData.map((card) => (
               <div
                 className='card'
                 key={card.id}
               >
-                <div className='card-image'>
+                <div
+                  className='card-image'
+                  data-aos='flip-left'
+                >
                   <img
                     src={card.image}
                     alt={card.title}

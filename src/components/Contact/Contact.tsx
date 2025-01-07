@@ -153,7 +153,7 @@ const Contact: React.FC = () => {
     <section id='contact'>
       <div className='container-fluid  '>
         <div className=' container contact'>
-          <div className='headlineP7'>Wanna work with us ...!</div>
+          <div className='headlineP7'>Contact-Us ...!</div>
           <div className='page7content'>
             <div className='form-container'>
               <form

@@ -14,7 +14,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 5.5rem 1.8rem;
+  padding: 3rem 1.8rem;
   overflow: hidden;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -26,7 +26,7 @@
 }
 
 .about-text h1 {
-  color: slateblue;
+  color: #57a3ff;
   font-size: 4em;
   font-weight: bolder;
   font-family: "Sofia Pro SemiBold" !important;
