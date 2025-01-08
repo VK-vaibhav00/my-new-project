@@ -28,10 +28,7 @@
     font-weight: bolder;
     overflow: hidden;
     text-align: center;
-    /* border: 1px solid black;
-    border-radius: 15px;
-    margin-left: 10px;
-    background: linear-gradient(45deg,black,red); */
+    
 
   }
   
@@ -62,7 +59,7 @@
     border-top: 1px solid rgb(192, 183, 183);
 
   }
-  .menu-icon {
+  .menu-icon {  
     display: none;
   }
   
@@ -70,9 +67,13 @@
     nav ul li {
       margin: 11px 5px;
     }
+    .Navbar {
+      
+      gap: 10rem;
+    }
   }
   
-  @media (max-width: 860px) {
+  @media (max-width: 870px) {
     .Navbar {
       padding: 15px;
       justify-content: space-between;
@@ -90,7 +91,7 @@
     }
     nav ul li {
       display: block;
-      margin: 16px 25px;
+      margin: 16px 0px;
       font-size: 14px; 
     }
     
@@ -109,12 +110,14 @@
     .logo {
       width:6rem ;
       height: 6rem;
-    }
+    } 
     .menu-icon {
       width: 25px;
     }
     .Navbar {
       padding: 10px 15px;
+      gap: 0;
+      max-height: 6vh;
     }
     .contact-icons {
       gap: 10px;

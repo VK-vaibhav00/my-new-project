@@ -342,7 +342,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className='footer-bottom'>
-        <p>&copy; 2025 Sunrise Enterprises Pvt. Ltd. All rights reserved.</p>
+        <p>&copy; 2025 Surve Enterprises Pvt. Ltd. All rights reserved.</p>
       </div>
     </div>
   );

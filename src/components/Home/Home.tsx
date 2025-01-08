@@ -15,10 +15,6 @@ const Home = () => {
             className='home-text'
             data-aos='fade-right'
           >
-            {/* <h1>
-              Sunrise <strong>Packaging Solutions</strong> for a Sustainable
-              Future
-            </h1> */}
             <h1>SUNRISE PACKAGING SOLUTUIONS FOR A SUSTAINABLE FUTURE</h1>
             <p>
               Reliable, eco-friendly solutions for all your packaging needs.
@@ -28,7 +24,7 @@ const Home = () => {
           </div>
           <div
             className='image-container'
-            data-aos='zoom-in-left'
+            // data-aos='zoom-in-left'
           >
             <img
               src={Homeimg}

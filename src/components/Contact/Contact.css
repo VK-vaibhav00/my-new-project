@@ -5,7 +5,6 @@
 }
 .contact{
     
-    /* height: 100vh; */
     background-image: url("../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg");
     background-size: cover;
     background-position: center;
@@ -38,10 +37,9 @@
 .form-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Adjust alignment as needed */
+  align-items: flex-start; 
   margin-top: 25px;
   width: 55%;
-  /* height: 553px; */
   color: #20252d;
   background: white;
   border-radius: 25px;
@@ -90,11 +88,11 @@
 
 .form-group-message textarea {
   resize: vertical;
-  max-height: 100px; /* Adjust as needed */
+  max-height: 100px; 
 }
 .form-group input:focus,
 .form-group-message textarea:focus {
-  border-color: #0d3efb; /* Border color when focused */
+  border-color: #0d3efb; 
   color: #0d3efb;
 }
 .form-group input:focus + label,
@@ -105,7 +103,7 @@
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group-message textarea:focus {
-  outline: none; /* Remove default blue outline on focus */
+  outline: none; 
 }
 
 .form-group.error input,
@@ -139,18 +137,12 @@
   }
 .card-container {
     perspective: 1000px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
-    /* background-color: #000000; */
     border-radius: 1rem;
     animation: float 3s ease-in-out infinite;
   }
   
   .card-body {
     width: 30rem;
-  /* padding: 20px; */
   border-radius: 12px;
   background: linear-gradient(to bottom right, #ffffff, #f3f4f6);
   border: 3px solid rgba(0, 0, 0, 0.1);
@@ -248,11 +240,11 @@
   .contacts {
     padding: 20px 20px;
   }
+  .card-body{
+    width: 20rem;
+  }
 }
 
-/* @media (max-width: 470px) {
-  
-} */
 
 @media (max-width: 600px) {
   .form-row {
@@ -262,7 +254,6 @@
   .form-group {
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     gap: 10px;
     margin-bottom: 10px;

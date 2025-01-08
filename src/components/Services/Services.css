@@ -31,7 +31,6 @@
     margin: 0 auto;
     padding: 1em;
     width: 300px;
-    /* background: #dbe2ff; */
     background: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
     background-size: cover;
     background-position: center;
@@ -114,5 +113,8 @@
     }
     .card {
       max-width: 90%;
+    }
+    .service-heading{
+      font-size: 2.5rem;
     }
   }

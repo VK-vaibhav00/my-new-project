@@ -61,12 +61,7 @@ const Services = () => {
     <section id='product'>
       <div className='container-fluid'>
         <div className=' service container'>
-          <p
-            className='service-heading'
-            data-aos='fade-down'
-          >
-            Our Products
-          </p>
+          <p className='service-heading'>Our Products</p>
           <div className='service-container'>
             {cardsData.map((card) => (
               <div
