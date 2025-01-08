@@ -1,0 +1,154 @@
+.clients {
+    /* min-height: 100vh; */
+    background: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
+    background-size: cover;
+    background-position: center;    
+    background-repeat: no-repeat;   
+    text-align: center;
+  padding: 2rem;
+    max-height: 90vh;
+  }
+  
+  .client-heading {
+    /* padding-top: 20px; */
+    width: 100%;
+    line-height: 2;
+  }
+  .client-heading h4 {
+    font-size: 2rem;
+    color: #20252d;
+    font-family: "Sofia Pro Light" !important;
+  }
+  .client-heading h1 {
+    font-size: 3rem;
+    color: #57a3ff;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .client-heading p {
+    font-size: 16px;
+    color: black;
+    line-height: 35px;
+    margin-top: 15px;
+  }
+  
+  .client-body {
+    /* margin-top: 20px; */
+    padding: 0 80px;
+    position: relative;
+  }
+  .back-btn,
+  .next-btn {
+    top: 30%;
+    right: 10px;
+    position: absolute;
+    transform: translateY(-66.66%);
+    padding: 15px;
+    width: 80px;
+    cursor: pointer;
+  }
+  .back-btn {
+    right: auto;
+    left: 10px;
+  }
+  .slider {
+    overflow: hidden;
+  }
+  .slider ul {
+    display: flex;
+    width: 400%;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .slider ul li {
+    list-style: none;
+    width: 100%;
+    padding: 32px 20px 0px;
+  }
+  .user-info img {
+    border: 2px solid #031d8e;
+    border-radius: 50%;
+    padding: 10px;
+    width: 150px;
+  }
+  .user-info h3 {
+    font-family: "Sofia Pro SemiBold";
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .user-info span {
+    color: #bcbcbc;
+    font-size: 16px;
+  }
+  .slide {
+    color: #20252d;
+    line-height: 1.4;
+  }
+  .left-img {
+    float: left;
+    width: 45px;
+  }
+  .right-img {
+    float: right;
+    width: 45px;
+  }
+  .slide p {
+    font-size: 24px;
+    /* width: 712px; */
+    margin: 35px 40px 0px;
+  }
+  
+  @media (max-width: 840px) {
+    .clients {
+      max-height: none;
+      padding: 20px;
+    }
+    .client-body {
+      margin-top: 45px;
+      padding: 0 20px;
+    }
+    .user-info img {
+      width: 150px;
+    }
+    .client-heading h1 {
+      font-size: 31px;
+      margin-top: 10px;
+    }
+    .client-heading h4 {
+      font-size: 14px;
+    }
+    .client-heading p {
+      font-size: 14px;
+      padding: 0px 3px;
+      line-height: 25px;
+    }
+    .back-btn,
+    .next-btn {
+      top: 32%;
+      width: 40px;
+      position: absolute;
+      padding: 15px 0px;
+      z-index: 9999;
+    }
+    .user-info span {
+      font-size: 14px;
+    }
+    .slider ul li {
+      padding: 0px;
+    }
+    .user-info h3 {
+      font-size: 22px;
+    }
+    .left-img {
+      width: 30px;
+      margin-top: 25px;
+    }
+    .right-img {
+      width: 30px;
+    }
+    .slide p {
+      font-size: 17px;
+      margin: 55px 0px 0px;
+    }
+  }

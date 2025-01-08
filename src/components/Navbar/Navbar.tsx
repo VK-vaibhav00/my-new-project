@@ -88,25 +88,28 @@ const Navbar = () => {
           />
         </Link>
         <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-          {['home', 'about', 'product', 'contact'].map((section, index) => (
-            <li key={index}>
-              <Link
-                to={section}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                className={activeItem === section ? 'active' : ''}
-                onClick={() => handleItemClick(section)}
-              >
-                {section
-                  .toUpperCase()
-                  .replace('HOME', 'HOME')
-                  .replace('PRODUCT', 'PRODUCT')
-                  .replace('CONTACT', 'CONTACT')
-                  .replace('ABOUT', 'ABOUT')}
-              </Link>
-            </li>
-          ))}
+          {['home', 'about', 'product', 'client', 'contact'].map(
+            (section, index) => (
+              <li key={index}>
+                <Link
+                  to={section}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  className={activeItem === section ? 'active' : ''}
+                  onClick={() => handleItemClick(section)}
+                >
+                  {section
+                    .toUpperCase()
+                    .replace('HOME', 'HOME')
+                    .replace('PRODUCT', 'PRODUCT')
+                    .replace('CONTACT', 'CONTACT')
+                    .replace('CLIENT', 'CLIENT')
+                    .replace('ABOUT', 'ABOUT')}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
         <img
           src={menuicon}

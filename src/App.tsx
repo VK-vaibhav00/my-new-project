@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Loader from './components/Loader/Loader';
 import Footer from './components/Footer/Footer';
+import Client from './components/Client/Client';
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
           <Home />
           <About />
           <Services />
+          <Client />
           <Contact />
           <Footer />
         </>
