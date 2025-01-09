@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import './Contact.css';
 
@@ -151,8 +151,8 @@ const Contact: React.FC = () => {
 
   return (
     <section id='contact'>
-      <div className='container-fluid  '>
-        <div className=' container contact'>
+      <div className='container-fluid contact '>
+        <div className=' container '>
           <div className='headlineP7'>Contact-Us ...!</div>
           <div className='page7content'>
             <div className='form-container'>

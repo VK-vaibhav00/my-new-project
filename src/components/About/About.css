@@ -3,16 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.abouts{
+  background-image: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  background-image: url('../../assets/hand-painted-watercolor-abstract-background_889452-25360.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding: 3rem 2rem;
   overflow: hidden;
   flex-wrap: wrap; 

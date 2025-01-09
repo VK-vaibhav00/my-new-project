@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './Services.css';
 import img1 from '../../assets/Carboardboxes/Partition.png';
 import img2 from '../../assets/Carboardboxes/corrugated.png';
@@ -59,7 +59,7 @@ const Services = () => {
   }, []);
   return (
     <section id='product'>
-      <div className='container-fluid'>
+      <div className='services container-fluid'>
         <div className=' service container'>
           <p className='service-heading'>Our Products</p>
           <div className='service-container'>

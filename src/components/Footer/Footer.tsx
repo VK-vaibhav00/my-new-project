@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // import Logo from '../../assets/pngtree-sun-icon-logo-png-png-image_5687131.png';
 import './Footer.css';
 import linkedin from '../../assets/linkedin.svg';
@@ -152,6 +152,7 @@ const Footer: React.FC = () => {
                     listStyle: 'none',
                     fontSize: '13px',
                     lineHeight: '29px',
+                    cursor: 'pointer',
                   }}
                 >
                   <li>Home</li>
@@ -165,6 +166,7 @@ const Footer: React.FC = () => {
                     listStyle: 'none',
                     fontSize: '13px',
                     lineHeight: '29px',
+                    cursor: 'pointer',
                   }}
                 >
                   <li>Product</li>
@@ -219,6 +221,7 @@ const Footer: React.FC = () => {
                     listStyle: 'none',
                     fontSize: '13px',
                     lineHeight: '29px',
+                    cursor: 'pointer',
                   }}
                 >
                   <li>About us</li>
@@ -232,6 +235,7 @@ const Footer: React.FC = () => {
                     listStyle: 'none',
                     fontSize: '13px',
                     lineHeight: '29px',
+                    cursor: 'pointer',
                   }}
                 >
                   <li>Contact us</li>

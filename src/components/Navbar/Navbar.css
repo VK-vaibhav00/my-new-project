@@ -117,7 +117,6 @@
     .Navbar {
       padding: 10px 15px;
       gap: 0;
-      max-height: 6vh;
     }
     .contact-icons {
       gap: 10px;
@@ -127,4 +126,12 @@
       margin-right: 0px;
       font-size: 14px;
     }
+  }
+
+  @media (max-width: 460px) {
+.Navbar {
+  max-height: 9vh;
+
+}
+
   }

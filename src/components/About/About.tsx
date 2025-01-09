@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './About.css';
 import aboutimg from '../../assets/download.png';
 import Aos from 'aos';
+import { Link } from 'react-scroll';
 
 const About = () => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <section id='about'>
-      <div className='container-fluid'>
+      <div className=' abouts container-fluid'>
         <div className='about container'>
           <div
             className='about-img'
@@ -33,7 +34,14 @@ const About = () => {
               high-quality cardboard packaging solutions that protect products,
               promote brands, and prioritize the environment.
             </p>
-            <button className='btn-explore'>Explore Products</button>
+            <Link
+              to='contact'
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
+              <button className='btn-explore'>Contact Us</button>
+            </Link>
           </div>
         </div>
       </div>

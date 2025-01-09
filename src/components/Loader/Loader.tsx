@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
 import './Loader.css';
 import Loaderanimation from '../../assets/Animation - 1735551528650.json';

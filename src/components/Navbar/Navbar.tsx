@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import AOS from 'aos';
 import infeonlogo from '../../assets/pngtree-sun-icon-logo-png-png-image_5687131.png';

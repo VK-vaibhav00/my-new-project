@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './Home.css';
 import Homeimg from '../../assets/Home.png';
 import Aos from 'aos';
+import { Link } from 'react-scroll';
 
 const Home = () => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const Home = () => {
   }, []);
   return (
     <section id='home'>
-      <div className='container-fluid'>
+      <div className='homes container-fluid'>
         <div className='home container'>
           <div
             className='home-text'
@@ -20,7 +21,14 @@ const Home = () => {
               Reliable, eco-friendly solutions for all your packaging needs.
               Simplify your operations while promoting sustainability.
             </p>
-            <button className='home-btn-explore'>Explore Products</button>
+            <Link
+              to='product'
+              smooth={true}
+              offset={-60}
+              duration={500}
+            >
+              <button className='home-btn-explore'>Explore Products</button>
+            </Link>
           </div>
           <div
             className='image-container'
