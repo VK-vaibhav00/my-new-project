@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import AOS from 'aos';
 import infeonlogo from '../../assets/pngtree-sun-icon-logo-png-png-image_5687131.png';
-import menuicon from '../../assets/toggle.png';
+import menuicon from '../../assets/images-removebg-preview.png';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
   const toggleMenu = () => setMobileMenu((prev) => !prev);
 
   const handleScroll = () => {
-    setSticky(window.scrollY > 150);
+    setSticky(window.scrollY > 30);
   };
 
   useEffect(() => {

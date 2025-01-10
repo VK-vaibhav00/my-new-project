@@ -154,6 +154,7 @@ const Footer: React.FC = () => {
                     lineHeight: '29px',
                     cursor: 'pointer',
                   }}
+                  className='footer-li'
                 >
                   <li>Home</li>
                 </Link>
@@ -168,6 +169,7 @@ const Footer: React.FC = () => {
                     lineHeight: '29px',
                     cursor: 'pointer',
                   }}
+                  className='footer-li'
                 >
                   <li>Product</li>
                 </Link>
@@ -198,6 +200,10 @@ const Footer: React.FC = () => {
                   <li>Portfolio</li>
                 </Link> */}
               </ul>
+              <div className='footer-contact'>
+                <p>Email :-</p>
+                <a href='mailto:info@infeonlabs.com'>info@infeonlabs.com</a>
+              </div>
             </div>
 
             <div style={{ textAlign: 'left' }}>
@@ -223,6 +229,7 @@ const Footer: React.FC = () => {
                     lineHeight: '29px',
                     cursor: 'pointer',
                   }}
+                  className='footer-li'
                 >
                   <li>About us</li>
                 </Link>
@@ -237,10 +244,15 @@ const Footer: React.FC = () => {
                     lineHeight: '29px',
                     cursor: 'pointer',
                   }}
+                  className='footer-li'
                 >
                   <li>Contact us</li>
                 </Link>
               </ul>
+              <div className='footer-contact'>
+                <p>Phone no:-</p>
+                <a href='tel:+91 9657194845'>+91 9657194845</a>
+              </div>
             </div>
 
             <div style={{ textAlign: 'left' }}>

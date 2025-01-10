@@ -10,10 +10,14 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-
   }
-  
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color: #57a3ff;
+  }
   .footerContainer {
  
     text-align: center;
@@ -55,8 +59,8 @@
   }
   .footer-ilogo {
     font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
+    /* font-weight: 700; */
+    margin-bottom: 2.5rem;
     color: #efa157;
   }
   .footer-btn-explore {
@@ -87,6 +91,22 @@
     background-color: navy;
     color: white;
     padding: 1rem;
+  }
+.footer-li{
+  transition: transform 0.2s ease-in-out;
+}
+  .footer-li:hover{
+    color:#57a3ff;
+    transform: scale(1.5);
+  }
+
+  .footer-contact{
+    padding: 1rem 0;
+    line-height: 1.4rem;
+    
+      }
+  .footer-contact:hover{
+    color:#57a3ff;
   }
 
   @media (max-width: 1300px) {
