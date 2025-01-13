@@ -56,10 +56,8 @@ const Contact: React.FC = () => {
   };
 
   const accessKeys = {
-    // ServiceWorkerRegistration: { key: '58226671-cf23-4742-9fc3-aec905c0cb6c' },
-    // serviceB: { key: '057c2cce-5505-4a66-a197-152890b03f9f' },
-    // serviceC: { key: '10b3997f-aa3d-4b16-8680-c80666c3f09b' },
-    // serviceD: { key: 'dc3f74e7-9a1b-429f-8d28-2a651ac005c9' },
+    ServiceWorkerRegistration: { key: 'ea335822-3c4e-4522-9efc-fa8b0e77d2b5' },
+    serviceB: { key: 'dc3f74e7-9a1b-429f-8d28-2a651ac005c9' },
   };
 
   const validateForm = (): boolean => {

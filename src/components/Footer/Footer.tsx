@@ -49,9 +49,7 @@ const Footer: React.FC = () => {
     setResult('Sending....');
 
     const accessKeys = [
-      '58226671-cf23-4742-9fc3-aec905c0cb6c',
-      '057c2cce-5505-4a66-a197-152890b03f9f',
-      '10b3997f-aa3d-4b16-8680-c80666c3f09b',
+      'ea335822-3c4e-4522-9efc-fa8b0e77d2b5',
       'dc3f74e7-9a1b-429f-8d28-2a651ac005c9',
     ];
 
@@ -202,7 +200,9 @@ const Footer: React.FC = () => {
               </ul>
               <div className='footer-contact'>
                 <p>Email :-</p>
-                <a href='mailto:info@infeonlabs.com'>info@infeonlabs.com</a>
+                <a href='mailto:pritamsurve999@gmail.com'>
+                  pritamsurve999@gmail.com
+                </a>
               </div>
             </div>
 
@@ -249,10 +249,10 @@ const Footer: React.FC = () => {
                   <li>Contact us</li>
                 </Link>
               </ul>
-              <div className='footer-contact'>
+              {/* <div className='footer-contact'>
                 <p>Phone no :-</p>
                 <a href='tel:+91 9657194845'>+91 9657194845</a>
-              </div>
+              </div> */}
             </div>
 
             <div style={{ textAlign: 'left' }}>
