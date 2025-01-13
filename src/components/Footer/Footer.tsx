@@ -250,7 +250,7 @@ const Footer: React.FC = () => {
                 </Link>
               </ul>
               <div className='footer-contact'>
-                <p>Phone no:-</p>
+                <p>Phone no :-</p>
                 <a href='tel:+91 9657194845'>+91 9657194845</a>
               </div>
             </div>
