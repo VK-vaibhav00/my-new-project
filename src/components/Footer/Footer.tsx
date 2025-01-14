@@ -127,6 +127,15 @@ const Footer: React.FC = () => {
                 Crafting the Backbone of Global Commerce: Premium, Eco-Friendly
                 Cardboard Solutions Engineered for Innovation and Impact.
               </div>
+              <div className='footer-contact'>
+                <p>contact : </p>
+                <a
+                  href='mailto:pritamsurve999@gmail.com'
+                  className='ft-contact'
+                >
+                  pritamsurve999@gmail.com
+                </a>
+              </div>
             </div>
 
             <div style={{ textAlign: 'left' }}>
@@ -198,12 +207,6 @@ const Footer: React.FC = () => {
                   <li>Portfolio</li>
                 </Link> */}
               </ul>
-              <div className='footer-contact'>
-                <p>Email :-</p>
-                <a href='mailto:pritamsurve999@gmail.com'>
-                  pritamsurve999@gmail.com
-                </a>
-              </div>
             </div>
 
             <div style={{ textAlign: 'left' }}>
@@ -318,41 +321,25 @@ const Footer: React.FC = () => {
               src={linkedin}
               alt='LinkedIn'
               className='b-image'
-              onClick={() =>
-                handleClick(
-                  'https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A103237471&keywords=Infeon%20IT%20Services&origin=ENTITY_SEARCH_HOME_HISTORY&sid=r1G'
-                )
-              }
+              onClick={() => handleClick('https://www.linkedin.com/')}
             />
             <img
               src={facebookIcon}
               alt='LinkedIn'
               className='b-image'
-              onClick={() =>
-                handleClick(
-                  'https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A103237471&keywords=Infeon%20IT%20Services&origin=ENTITY_SEARCH_HOME_HISTORY&sid=r1G'
-                )
-              }
+              onClick={() => handleClick('https://www.facebook.com/login/')}
             />
             <img
               src={twitterIcon}
               alt='LinkedIn'
               className='b-image'
-              onClick={() =>
-                handleClick(
-                  'https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A103237471&keywords=Infeon%20IT%20Services&origin=ENTITY_SEARCH_HOME_HISTORY&sid=r1G'
-                )
-              }
+              onClick={() => handleClick('https://x.com/?lang=en')}
             />
             <img
               src={instagramIcon}
               alt='LinkedIn'
               className='b-image'
-              onClick={() =>
-                handleClick(
-                  'https://www.linkedin.com/search/results/all/?heroEntityKey=urn%3Ali%3Aorganization%3A103237471&keywords=Infeon%20IT%20Services&origin=ENTITY_SEARCH_HOME_HISTORY&sid=r1G'
-                )
-              }
+              onClick={() => handleClick('https://www.instagram.com/')}
             />
           </div>
         </div>
